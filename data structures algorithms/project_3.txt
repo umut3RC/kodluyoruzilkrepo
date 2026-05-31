@@ -1,0 +1,44 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] Dizisinin Binary Search Tree (BST) Aşamaları
+
+1. Root (Kök): 7
+   Dizinin ilk elemanı olduğu için ağacın tepesine yerleşir.
+
+2. 5'in Eklenmesi:
+   5, 7'den küçüktür. Root'un (7) SOLUNA eklenir.
+
+3. 1'in Eklenmesi:
+   1, 7'den küçüktür (Sola git). 5'ten küçüktür. 5'in SOLUNA eklenir.
+
+4. 8'in Eklenmesi:
+   8, 7'den büyüktür. Root'un (7) SAĞINA eklenir.
+
+5. 3'ün Eklenmesi:
+   3, 7'den küçüktür (Sola git). 5'ten küçüktür (Sola git). 1'den büyüktür. 1'in SAĞINA eklenir.
+
+6. 6'nın Eklenmesi:
+   6, 7'den küçüktür (Sola git). 5'ten büyüktür. 5'in SAĞINA eklenir.
+
+7. 0'ın Eklenmesi:
+   0, 7'den küçüktür (Sola git). 5'ten küçüktür (Sola git). 1'den küçüktür. 1'in SOLUNA eklenir.
+
+8. 9'un Eklenmesi:
+   9, 7'den büyüktür (Sağa git). 8'den büyüktür. 8'in SAĞINA eklenir.
+
+9. 4'ün Eklenmesi:
+   4, 7'den küçüktür (Sola git). 5'ten küçüktür (Sola git). 1'den büyüktür (Sağa git). 3'ten büyüktür. 3'ün SAĞINA eklenir.
+
+10. 2'nin Eklenmesi:
+    2, 7'den küçüktür (Sola git). 5'ten küçüktür (Sola git). 1'den büyüktür (Sağa git). 3'ten küçüktür. 3'ün SOLUNA eklenir.
+
+
+Ağacın Genel Yapısı:
+-------------------
+            7
+           / \
+          5   8
+         / \   \
+        1   6   9
+       / \
+      0   3
+         / \
+        2   4
